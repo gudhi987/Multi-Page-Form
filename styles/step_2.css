@@ -1,0 +1,125 @@
+.plan-selection {
+    width: 100%;
+
+    display: flex;
+    column-gap: 2rem;
+}
+
+.plan-selection > div {
+    border: solid 2px var(--light-gray);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    flex: 1;
+}
+
+.plan-selection > div > img {
+    margin-bottom: 2rem;
+}
+
+.plan-selection > div > p:first-of-type {
+    margin-bottom: 0.5rem;
+    color: var(--marine-blue);
+    font-weight: var(--bold);
+}
+
+.plan-selection > div > p:last-of-type {
+    color: var(--cool-gray);
+    font-weight: var(--bold);
+}
+
+.plan-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.plan-duration {
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--light-gray);
+    font-weight: var(--bold);
+    border-radius: 0.5rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    column-gap: 1rem;
+}
+
+.wrapper {
+    padding-inline: 0.25rem;
+    width: 3rem;
+    height: 1.5rem;
+    background-color: var(--marine-blue);
+    border-radius: 1rem;
+
+    display: grid;
+}
+
+.child {
+    width: 1rem;
+    height: 1rem;
+    border-radius: 50%;
+    background-color: var(--white);
+    align-self: center;
+}
+
+.tracking-buttons {
+    margin-top: 8rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.back,.next {
+    padding: 0.75rem 1.5rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+
+    font-weight: var(--bold);
+}
+.next {
+    color: var(--light-gray);
+    background-color: var(--marine-blue);
+}
+
+.back {
+    background: none;
+    border: none;
+    color: var(--cool-gray);
+}
+
+.side-bar > .option-2 > button, .side-bar-mobile > button:nth-child(2) {
+    background-color: var(--light-blue);
+    color: var(--marine-blue);
+    border: none;
+}
+
+@media screen and (max-width: 850px) {
+    .plan-selection {
+        column-gap: 0.5rem;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 575px) {
+    .plan-selection {
+        flex-direction: column;
+        row-gap: 1rem;
+    }
+
+    .plan-selection > div {
+        width: 100%;
+
+        display: flex;
+        column-gap: 1rem;
+        align-items: center;
+    }
+
+    .plan-selection > div > img {
+        margin-bottom: 0rem;
+    }
+    
+    .plan-info {
+        row-gap: 1rem;
+    }
+}

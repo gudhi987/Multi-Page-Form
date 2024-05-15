@@ -1,0 +1,48 @@
+.input-wrapper {
+    display: grid;
+    row-gap: 0.5rem;
+}
+
+.info label {
+    color: var(--marine-blue);
+    font-weight: var(--light);
+}
+
+.info input {
+    width: 100%;
+    padding: 1rem;
+    border-radius: 5px;
+    border: solid 2px var(--cool-gray);
+}
+
+.info input::placeholder {
+    color: var(--cool-gray);
+    font-weight: var(--bold);
+}
+
+.info button {
+    padding: 0.75rem 1.5rem;
+    margin-top: 5rem;
+    width: fit-content;
+    place-self: end;
+    border-radius: 0.5rem;
+
+    color: var(--light-gray);
+    font-weight: var(--bold);
+    background-color: var(--marine-blue);
+}
+
+.side-bar > .option-1 > button,.side-bar-mobile > button:nth-child(1) {
+    background-color: var(--light-blue);
+    color: var(--marine-blue);
+    border: none;
+}
+
+@media screen and (max-width: 650px) {
+    .input-wrapper {
+        row-gap: 0;
+    }
+    .info input {
+        padding: 0.5rem 1rem;
+    }
+}

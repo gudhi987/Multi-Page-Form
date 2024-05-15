@@ -1,0 +1,90 @@
+.summary {
+    padding: 1rem;
+    width: 100%;
+    background-color: var(--magnolia);
+    border-radius: 0.5rem;
+
+    display: grid;
+    row-gap: 1rem;
+}
+
+.plan-price-summary {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.additional-charges {
+    border-top: solid 2px var(--light-gray);
+    display: grid;
+    row-gap: 1rem;
+}
+
+.additional-charges > div:first-of-type {
+    padding-top: 1rem;
+}
+
+.additional-charges > div {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.total-price {
+    padding-inline: 1rem;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.info-wrapper > p:first-of-type,.info-wrapper + p:first-of-type {
+    color: var(--marine-blue);
+    font-weight: var(--bold);
+}
+
+.info-wrapper > p:first-of-type {
+    margin-bottom: 0.5rem;
+}
+
+.additional-charges > div > p:first-of-type , .total-price > p:first-of-type {
+    color: var(--cool-gray);
+    font-weight: var(--regular);
+}
+
+.total-price > p:last-of-type {
+    color: var(--purplish-blue);
+    font-size: 1.25rem;
+    font-weight: var(--bold);
+}
+
+.tracking-buttons {
+    margin-top: 7.5rem;
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.back,.next {
+    padding: 0.75rem 1.5rem;
+    width: fit-content;
+    border-radius: 0.5rem;
+
+    font-weight: var(--bold);
+}
+.next {
+    color: var(--light-gray);
+    background-color: var(--marine-blue);
+}
+
+.back {
+    background: none;
+    border: none;
+    color: var(--cool-gray);
+}
+
+.side-bar > .option-4 > button, .side-bar-mobile > button:nth-child(4) {
+    background-color: var(--light-blue);
+    color: var(--marine-blue);
+    border: none;
+}
