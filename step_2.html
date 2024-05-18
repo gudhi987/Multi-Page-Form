@@ -21,17 +21,32 @@
   </div>
 
   <div class="side-bar-mobile">
-    <button class="step">1</button>
-    <button class="step">2</button>
-    <button class="step">3</button>
-    <button class="step">4</button>
+    <button class="step">
+      1
+      <a href="index.html"></a>
+    </button>
+    <button class="step">
+      2
+      <a href="step_2.html"></a>
+    </button>
+    <button class="step">
+      3
+      <a href="step_3.html"></a>
+    </button>
+    <button class="step">
+      4
+      <a href="step_4.html"></a>
+    </button>
   </div>
 
   <div class="content-area">
     <div class="side-bar">
 
       <div class="option-1">
-        <button class="step">1</button>
+        <button class="step">
+          1
+          <a href="index.html"></a>
+        </button>
         <div class="option-info">
           <p>STEP 1</p>
           <p>YOUR INFO</p>
@@ -39,7 +54,10 @@
       </div>
 
       <div class="option-2">
-        <button class="step">2</button>
+        <button class="step">
+          2
+          <a href="step_2.html"></a>
+        </button>
         <div class="option-info">
           <p>STEP 2</p>
           <p>SELECT PLAN</p>
@@ -47,7 +65,10 @@
       </div>
 
       <div class="option-3">
-        <button class="step">3</button>
+        <button class="step">
+          3
+          <a href="step_3.html"></a>
+        </button>
         <div class="option-info">
           <p>STEP 3</p>
           <p>ADD-ONS</p>
@@ -55,7 +76,10 @@
       </div>
 
       <div class="option-4">
-        <button class="step">4</button>
+        <button class="step">
+          4
+          <a href="step_4.html"></a>
+        </button>
         <div class="option-info">
           <p>STEP 4</p>
           <p>SUMMARY</p>
@@ -69,21 +93,21 @@
         <p>You have the option of monthly or yearly billing.</p>
 
         <section class="plan-selection">
-            <div class="plan-1">
+            <div class="plan-1 onClickFocus" tabindex="0">
                 <img src="./assets/images/icon-arcade.svg" alt="icon-arcade">
                 <div class="plan-info">
                   <p>Arcade</p>
                   <p>$9/mo</p>
                 </div>
             </div>
-            <div class="plan-2">
+            <div class="plan-2" tabindex="0">
                 <img src="./assets/images/icon-advanced.svg" alt="icon-advanced">
                 <div class="plan-info">
                   <p>Advanced</p>
                   <p>$12/mo</p>
                 </div>
             </div>
-            <div class="plan-3">
+            <div class="plan-3" tabindex="0">
                 <img src="./assets/images/icon-pro.svg" alt="icon-pro">
                 <div class="plan-info">
                   <p>Pro</p>
@@ -94,15 +118,27 @@
 
         <div class="plan-duration">
             <p>Monthly</p>
-            <div class="wrapper">
+            <div class="wrapper" tabindex="0">
                 <div class="child"></div>
             </div>
             <p>Yearly</p>
         </div>
 
         <div class="tracking-buttons">
-            <button class="back">Go Back</button>
-            <button class="next">Next Step</button>
+            <button class="back">
+              Go Back
+              <a href="index.html"></a>
+            </button>
+            <button class="next">
+              Next Step
+              <a href="step_3.html"></a>
+            </button>
         </div>
     </div>
   </div>
+
+  <script src="./scripts/global.js"></script>
+  <script src="./scripts/step2.js"></script>
+
+</body>
+</html>

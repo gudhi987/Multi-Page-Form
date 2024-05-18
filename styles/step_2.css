@@ -10,21 +10,39 @@
     border-radius: 0.5rem;
     padding: 1rem;
     flex: 1;
+    
+    cursor: pointer;
+}
+
+.onClickFocus {
+    outline: none;
+    background-color: var(--magnolia);
 }
 
 .plan-selection > div > img {
     margin-bottom: 2rem;
 }
 
-.plan-selection > div > p:first-of-type {
+.plan-selection > div:first-child {
+    border: solid 2px var(--purplish-blue);
+}
+
+.plan-info p:first-child {
     margin-bottom: 0.5rem;
     color: var(--marine-blue);
     font-weight: var(--bold);
 }
 
-.plan-selection > div > p:last-of-type {
+.plan-info p:nth-child(2) {
     color: var(--cool-gray);
-    font-weight: var(--bold);
+    font-weight: var(--regular);
+}
+
+.plan-info p:nth-child(3) {
+    margin-top: 0.5rem;
+    color: var(--marine-blue);
+    font-weight: var(--light);
+    font-size: 14px;
 }
 
 .plan-info {
@@ -53,6 +71,8 @@
     border-radius: 1rem;
 
     display: grid;
+
+    cursor: pointer;
 }
 
 .child {
@@ -61,6 +81,9 @@
     border-radius: 50%;
     background-color: var(--white);
     align-self: center;
+    transform: translate(0rem);
+
+    transition: transform ease-in-out 250ms;
 }
 
 .tracking-buttons {
@@ -121,5 +144,13 @@
     
     .plan-info {
         row-gap: 1rem;
+    }
+
+    .plan-info p:first-child {
+        margin-bottom: 0;
+    }
+
+    .plan-info p:nth-child(3) {
+        margin-top: 0;
     }
 }

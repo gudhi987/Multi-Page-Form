@@ -65,14 +65,14 @@
     justify-content: space-between;
 }
 
-.back,.next {
+.back,.confirm {
     padding: 0.75rem 1.5rem;
     width: fit-content;
     border-radius: 0.5rem;
 
     font-weight: var(--bold);
 }
-.next {
+.confirm {
     color: var(--light-gray);
     background-color: var(--marine-blue);
 }
@@ -87,4 +87,17 @@
     background-color: var(--light-blue);
     color: var(--marine-blue);
     border: none;
+}
+
+.thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2rem;
+}
+
+.thank-you p {
+    text-align: center;
+    color: var(--cool-gray);
 }

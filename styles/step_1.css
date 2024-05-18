@@ -3,9 +3,18 @@
     row-gap: 0.5rem;
 }
 
-.info label {
+.labels {
+    display: flex;
+    justify-content: space-between;
+}
+
+.info label,.error-message {
     color: var(--marine-blue);
     font-weight: var(--light);
+}
+
+.error-message {
+    color: var(--strawberry-red);
 }
 
 .info input {
@@ -18,6 +27,30 @@
 .info input::placeholder {
     color: var(--cool-gray);
     font-weight: var(--bold);
+}
+
+.info input:valid {
+    border: solid 2px var(--purplish-blue);
+    outline: none;
+}
+
+.info input:invalid {
+    border: solid 2px var(--strawberry-red);
+    outline: none;
+}
+
+@keyframes required-animation {
+    0%,50%,100% {}
+    25% {
+        transform: translateY(-2px);
+    }
+    75% {
+        transform: translateY(2px);
+    }
+}
+
+.add-required-animation {
+    animation: required-animation 250ms ease-in-out 2;
 }
 
 .info button {

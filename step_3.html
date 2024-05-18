@@ -22,17 +22,32 @@
   </div>
 
   <div class="side-bar-mobile">
-    <button class="step">1</button>
-    <button class="step">2</button>
-    <button class="step">3</button>
-    <button class="step">4</button>
+    <button class="step">
+      1
+      <a href="index.html"></a>
+    </button>
+    <button class="step">
+      2
+      <a href="step_2.html"></a>
+    </button>
+    <button class="step">
+      3
+      <a href="step_3.html"></a>
+    </button>
+    <button class="step">
+      4
+      <a href="step_4.html"></a>
+    </button>
   </div>
   
   <div class="content-area">
     <div class="side-bar">
 
       <div class="option-1">
-        <button class="step">1</button>
+        <button class="step">
+          1
+          <a href="index.html"></a>
+        </button>
         <div class="option-info">
           <p>STEP 1</p>
           <p>YOUR INFO</p>
@@ -40,7 +55,10 @@
       </div>
 
       <div class="option-2">
-        <button class="step">2</button>
+        <button class="step">
+          2
+          <a href="step_2.html"></a>
+        </button>
         <div class="option-info">
           <p>STEP 2</p>
           <p>SELECT PLAN</p>
@@ -48,7 +66,10 @@
       </div>
 
       <div class="option-3">
-        <button class="step">3</button>
+        <button class="step">
+          3
+          <a href="step_3.html"></a>
+        </button>
         <div class="option-info">
           <p>STEP 3</p>
           <p>ADD-ONS</p>
@@ -56,7 +77,10 @@
       </div>
 
       <div class="option-4">
-        <button class="step">4</button>
+        <button class="step">
+          4
+          <a href="step_4.html"></a>
+        </button>
         <div class="option-info">
           <p>STEP 4</p>
           <p>SUMMARY</p>
@@ -70,7 +94,7 @@
         <p>Add-ons help enhance your gaming experience.</p>
 
         <section class="add-on-options">
-            <div class="option-1">
+            <div class="option-1" tabindex="0">
                 <input type="checkbox" name="" id="online-service">
                 <div class="add-on-info">
                     <p>Online Service</p>
@@ -79,16 +103,16 @@
                 <p class="option-price">+$1/mo</p>
             </div>
 
-            <div class="option-2">
+            <div class="option-2" tabindex="0">
                 <input type="checkbox" name="" id="larger-storage">
                 <div class="add-on-info">
-                    <p>Larger storage</p>
+                    <p>Larger Storage</p>
                     <p>Extra 1TB of cloud save</p>
                 </div>
                 <p class="option-price">+$2/mo</p>
             </div>
 
-            <div class="option-3">
+            <div class="option-3" tabindex="0">
                 <input type="checkbox" name="" id="customizable-profile">
                 <div class="add-on-info">
                     <p>Customizable Profile</p>
@@ -99,10 +123,22 @@
         </section>
 
         <div class="tracking-buttons">
-            <button class="back">Go Back</button>
-            <button class="next">Next Step</button>
+            <button class="back">
+              Go Back
+              <a href="step_2.html"></a>
+            </button>
+            <button class="next">
+              Next Step
+              <a href="step_4.html"></a>
+            </button>
         </div>
     
     </div>
 
   </div>
+
+  <script src="./scripts/global.js"></script>
+  <script src="./scripts/step3.js"></script>
+
+</body>
+</html>
