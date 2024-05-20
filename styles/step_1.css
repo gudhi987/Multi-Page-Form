@@ -34,10 +34,11 @@
     outline: none;
 }
 
-.info input:invalid {
+.info input:invalid,.info input:required {
     border: solid 2px var(--strawberry-red);
     outline: none;
 }
+
 
 @keyframes required-animation {
     0%,50%,100% {}

@@ -20,10 +20,12 @@ function invalidNameField() {
     if(nameField.validity.valid)
     {
         errorMsgEle.innerHTML='';
+        nameField.style.borderColor='var(--purplish-blue)';
     }
     else 
     {
         errorMsgEle.innerHTML='Enter a valid name';
+        nameField.style.borderColor='var(--strawberry-red)';
     }
 }
 
@@ -32,10 +34,12 @@ function invalidEmailField() {
     if(emailField.validity.valid)
     {
         errorMsgEle.innerHTML='';
+        emailField.style.borderColor='var(--purplish-blue)';
     }
     else 
     {
         errorMsgEle.innerHTML='Enter a valid email';
+        emailField.style.borderColor='var(--strawberry-red)';
     }
 }
 
@@ -44,10 +48,12 @@ function invalidPhoneNoField() {
     if(phoneNoField.validity.valid)
     {
         errorMsgEle.innerHTML='';
+        phoneNoField.style.borderColor='var(--purplish-blue)';
     }
     else 
     {
         errorMsgEle.innerHTML='Enter a valid phone number';
+        phoneNoField.style.borderColor='var(--strawberry-red)';
     }
 }
 nameField.addEventListener('keydown',invalidNameField);
@@ -68,6 +74,8 @@ nextButton.addEventListener('click',() => {
     {
         errorMsgEle.innerHTML='This field is required';
 
+        nameField.style.borderColor='var(--strawberry-red)';
+
         nameField.classList.add('add-required-animation');
 
         setTimeout(() => {
@@ -79,10 +87,27 @@ nextButton.addEventListener('click',() => {
         errorMsgEle.innerHTML='';
     }
 
+    if(!nameField.validity.valid)
+    {
+        errorMsgEle.innerHTML='Enter a valid name';
+
+        nameField.classList.add('add-required-animation');
+
+        setTimeout(() => {
+            nameField.classList.remove('add-required-animation')
+        },500);
+    }
+    else 
+    {
+        
+    }
+
     errorMsgEle=document.querySelector('.input-wrapper:nth-of-type(2) .error-message');
     if(!emailField.value)
     {
         errorMsgEle.innerHTML='This field is required';
+
+        emailField.style.borderColor='var(--strawberry-red)';
 
         emailField.classList.add('add-required-animation');
 
@@ -95,10 +120,23 @@ nextButton.addEventListener('click',() => {
         errorMsgEle.innerHTML='';
     }
 
+    if(!emailField.validity.valid)
+    {
+        errorMsgEle.innerHTML='Enter a valid email';
+
+        emailField.classList.add('add-required-animation');
+
+        setTimeout(() => {
+            emailField.classList.remove('add-required-animation')
+        },500);
+    }
+
     errorMsgEle=document.querySelector('.input-wrapper:nth-of-type(3) .error-message');
     if(!phoneNoField.value)
     {
         errorMsgEle.innerHTML='This field is required';
+
+        phoneNoField.style.borderColor='var(--strawberry-red)';
 
         phoneNoField.classList.add('add-required-animation');
 
@@ -111,7 +149,18 @@ nextButton.addEventListener('click',() => {
         errorMsgEle.innerHTML='';
     }
 
-    if(nameField.value && emailField.validity.valid && emailField.value && phoneNoField.value)
+    if(!phoneNoField.validity.valid)
+    {
+        errorMsgEle.innerHTML='Enter a valid phone number';
+
+        phoneNoField.classList.add('add-required-animation');
+
+        setTimeout(() => {
+            phoneNoField.classList.remove('add-required-animation')
+        },500);
+    }
+
+    if(nameField.value && nameField.validity.valid && emailField.validity.valid && emailField.value && phoneNoField.value && phoneNoField.validity.valid)
     {
         userInfo.name=nameField.value;
         userInfo.email=emailField.value;
